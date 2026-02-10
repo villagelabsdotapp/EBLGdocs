@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --vl-forest-900: #2a3522;
+  --vl-forest-800: #34452a;
+  --vl-forest-700: #435736;
+  --vl-forest-600: #556b42;
+  --vl-forest-500: #6f8457;
+  --vl-forest-100: #e8eee2;
+  --vl-sand-50: #f8f6f0;
+  --vl-sand-100: #f2eee4;
+  --vl-border: #d9d2c2;
+}
+
+html,
+body {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Fraunces, Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  line-height: 1.15;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+img {
+  border-radius: 12px;
+}
+
+.card,
+[class*='card']:not([class*='card-group']),
+[class*='Card']:not([class*='CardGroup']) {
+  border: 1px solid var(--vl-border) !important;
+  border-radius: 14px !important;
+  background: linear-gradient(180deg, #ffffff 0%, var(--vl-sand-50) 100%);
+  box-shadow: 0 1px 0 rgba(42, 53, 34, 0.04);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+}
+
+.card:hover,
+[class*='card']:hover:not([class*='card-group']),
+[class*='Card']:hover:not([class*='CardGroup']) {
+  border-color: var(--vl-forest-500) !important;
+  box-shadow: 0 6px 20px rgba(52, 69, 42, 0.1);
+  transform: translateY(-1px);
+}
+
+pre,
+code[class*='language-'],
+table,
+[class*='Accordion'],
+[class*='Step'],
+[class*='Note'] {
+  border-radius: 12px !important;
+}
+
+.vl-hero {
+  border: 1px solid var(--vl-border);
+  border-radius: 16px;
+  padding: 1.25rem;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(111, 132, 87, 0.17), transparent 36%),
+    linear-gradient(180deg, #ffffff 0%, var(--vl-sand-100) 100%);
+}
+
+.vl-subtitle {
+  color: var(--vl-forest-800);
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.vl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.vl-chip {
+  border: 1px solid var(--vl-border);
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+.vl-chip h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+}
+
+.vl-chip p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #455a39;
+}
+
+.vl-divider {
+  margin: 1.25rem 0;
+  border-top: 1px solid var(--vl-border);
+}
+
+.vl-small {
+  font-size: 0.9rem;
+  color: #455a39;
+}
+
+@media (max-width: 1024px) {
+  .vl-hero {
+    padding: 1rem;
+  }
+}

@@ -3,6 +3,18 @@ title: "Peninsula User Manual"
 description: "Operational guide for Peninsula with a reusable standard model and an EBLG-specific implementation profile."
 ---
 
+import ManualPrinciples from '/snippets/manual-principles.mdx';
+
+<div className="vl-hero">
+  <p className="vl-subtitle">Manual Overview</p>
+  <h2>Reusable Core + Client Overlay</h2>
+  <p>
+    The manual is intentionally split into a stable Peninsula operating core and an EBLG-specific overlay. This preserves consistency across clients while allowing each implementation to define scope, controls, and workflow specifics with precision.
+  </p>
+</div>
+
+<ManualPrinciples />
+
 ## Purpose
 
 This documentation package is structured in two layers:
@@ -10,7 +22,30 @@ This documentation package is structured in two layers:
 1. A reusable Peninsula operating manual for any client implementation.
 2. An EBLG-specific profile that captures scope, controls, and decisions.
 
-It reflects the key board-level concerns raised by Kevin Long and Erica: openness, exportability, integration readiness, privacy boundaries, and practical phased rollout.
+It reflects key board-level concerns raised by Kevin Long and Erica: openness, exportability, integration readiness, privacy boundaries, and phased rollout discipline.
+
+## Audience Paths
+
+<div className="vl-grid">
+  <div className="vl-chip">
+    <h4>Board & Leadership</h4>
+    <p>Start with Kevin requirements and EBLG profile to evaluate governance posture and decision coverage.</p>
+  </div>
+  <div className="vl-chip">
+    <h4>Implementation Team</h4>
+    <p>Start with the indexing primer and standard manual to configure data pipelines and retrieval quality.</p>
+  </div>
+  <div className="vl-chip">
+    <h4>Operations Team</h4>
+    <p>Use deployment and handoff docs to manage publishing, audits, and platform continuity.</p>
+  </div>
+  <div className="vl-chip">
+    <h4>Future Client Teams</h4>
+    <p>Apply the generalization framework to build new overlays without rewriting the core manual.</p>
+  </div>
+</div>
+
+## Manual Map
 
 <CardGroup cols={2}>
   <Card title="Standard Manual" icon="book" href="/peninsula-manual/standard-manual">
@@ -20,19 +55,27 @@ It reflects the key board-level concerns raised by Kevin Long and Erica: opennes
     Client-specific scope, indexing policy, workflow pack, open decisions, and board-facing FAQs.
   </Card>
   <Card title="Kevin Requirements" icon="clipboard-check" href="/peninsula-manual/kevin-requirements">
-    Requirement traceability matrix from Kevin's email asks to manual coverage and implementation controls.
+    Requirement traceability matrix from Kevin's asks to concrete manual controls.
   </Card>
   <Card title="Data & Indexing Primer" icon="database" href="/peninsula-manual/data-indexing-primer">
-    First-principles explanation of data intake, selective processing, indexing, and retrieval for agents + LLM workflows.
+    First-principles explanation of data intake, selective processing, indexing, and retrieval for agents and LLM workflows.
+  </Card>
+  <Card title="Design System" icon="shapes" href="/peninsula-manual/design-system">
+    Reusable docs lego kit: card patterns, explainer blocks, decision units, and diagram templates.
+  </Card>
+  <Card title="Generalization Framework" icon="layer-group" href="/peninsula-manual/generalization-framework">
+    How to adapt this manual structure to new clients while preserving quality and governance consistency.
   </Card>
 </CardGroup>
 
-## How to Use This Docs Set
+## Operating Cadence
 
-- Leadership and board review: start with `Kevin Requirements` and `EBLG Profile`.
-- Implementation team: start with `Data & Indexing Primer`, then `Standard Manual`.
-- Operations and handoff: use `Mintlify Deployment` for publishing and maintenance workflows.
+- Weekly: issue triage, query miss review, and retrieval quality check.
+- Monthly: policy deltas, workflow adoption review, and backlog reprioritization.
+- Quarterly: portability drill, export validation, and control effectiveness review.
 
-<Card title="Mintlify Deployment & Repo Wiring" icon="rocket" href="/peninsula-manual/mintlify-deployment">
-  Publishing model, MCP integration notes, GitHub repository strategy, and Village Labs organization handoff.
-</Card>
+<div className="vl-divider" />
+
+<p className="vl-small">
+  For publishing and repository controls, use <a href="/peninsula-manual/mintlify-deployment">Mintlify Deployment & Repository Wiring</a>.
+</p>

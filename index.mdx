@@ -1,23 +1,59 @@
 ---
-title: "Village Labs Peninsula Docs"
-description: "Documentation hub for Peninsula platform operations and client implementation manuals."
+title: "Village Labs Documentation System"
+description: "Operational documentation hub for Peninsula platform mechanics, governance controls, and reusable client delivery patterns."
 ---
 
-## Peninsula Documentation Hub
+import ManualPrinciples from '/snippets/manual-principles.mdx';
 
-This site hosts the Peninsula operational documentation set, including reusable standards and client-specific implementation overlays.
+<div className="vl-hero">
+  <p className="vl-subtitle">Village Labs Knowledge Infrastructure</p>
+  <h2>Peninsula Documentation Hub</h2>
+  <p>
+    This site is the operating layer for how we explain, deliver, and govern Peninsula. It combines architecture guidance, client-specific overlays, and reusable documentation building blocks so teams can scale implementations without losing precision.
+  </p>
+</div>
+
+<ManualPrinciples />
+
+## What This System Covers
 
 <CardGroup cols={2}>
   <Card title="Peninsula User Manual" icon="book" href="/peninsula-manual/index">
-    Full manual with standard framework and EBLG profile.
+    Full manual architecture: reusable standards, client profile overlays, governance controls, and operating rhythms.
   </Card>
   <Card title="Data & Indexing Primer" icon="database" href="/peninsula-manual/data-indexing-primer">
-    First-principles explanation of ingestion, selective processing, indexing, and retrieval.
+    End-to-end mechanics of data intake, selective processing depth, hybrid indexing, retrieval ranking, and agent grounding.
   </Card>
   <Card title="Kevin Requirements" icon="clipboard-check" href="/peninsula-manual/kevin-requirements">
-    Board-level concerns mapped to implementation controls.
+    Board-level concerns translated into concrete implementation controls and traceability.
   </Card>
-  <Card title="Deployment Guide" icon="rocket" href="/peninsula-manual/mintlify-deployment">
-    Mintlify + GitHub repo wiring and hosting operations.
+  <Card title="Deployment & MCP" icon="rocket" href="/peninsula-manual/mintlify-deployment">
+    Mintlify publishing model, API refresh flow, MCP endpoint usage, and GitHub repository ownership model.
   </Card>
 </CardGroup>
+
+## Documentation Design Goals
+
+<div className="vl-grid">
+  <div className="vl-chip">
+    <h4>Clarity Under Pressure</h4>
+    <p>Pages are structured for fast decision-making by operators, leadership, and technical teams.</p>
+  </div>
+  <div className="vl-chip">
+    <h4>Portable by Default</h4>
+    <p>Architecture and controls are described so implementations can evolve without lock-in.</p>
+  </div>
+  <div className="vl-chip">
+    <h4>Reusable Across Clients</h4>
+    <p>Core sections stay stable while client overlays capture policy, scope, and workflow specifics.</p>
+  </div>
+  <div className="vl-chip">
+    <h4>Built for Review</h4>
+    <p>Citations, assumptions, open decisions, and governance checkpoints are explicit and auditable.</p>
+  </div>
+</div>
+
+## Next Reference Pages
+
+- Use `/peninsula-manual/design-system` for the reusable cards/diagrams/explainer lego kit.
+- Use `/peninsula-manual/generalization-framework` for how this structure scales beyond EBLG.

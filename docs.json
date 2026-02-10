@@ -1,37 +1,50 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Peninsula User Manual",
+  "name": "Village Labs Documentation System",
+  "css": "/styles.css",
   "colors": {
-    "primary": "#29371F",
-    "light": "#4A5A3D",
-    "dark": "#6B8456"
+    "primary": "#556B42",
+    "light": "#6F8457",
+    "dark": "#34452A"
   },
-  "favicon": "/favicon.svg",
+  "background": {
+    "color": {
+      "light": "#F8F6F0"
+    }
+  },
+  "favicon": "/images/village-mark.png",
   "navigation": {
     "tabs": [
       {
         "tab": "Manual",
         "groups": [
           {
-            "group": "Start",
+            "group": "Orientation",
             "pages": [
               "index",
               "peninsula-manual/index"
             ]
           },
           {
-            "group": "Core",
+            "group": "Platform Core",
             "pages": [
               "peninsula-manual/standard-manual",
               "peninsula-manual/data-indexing-primer"
             ]
           },
           {
-            "group": "EBLG",
+            "group": "Client Layer (EBLG)",
             "pages": [
               "peninsula-manual/eblg-profile",
               "peninsula-manual/kevin-requirements"
+            ]
+          },
+          {
+            "group": "Design System",
+            "pages": [
+              "peninsula-manual/design-system",
+              "peninsula-manual/generalization-framework"
             ]
           },
           {
@@ -59,8 +72,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/village-light.png",
+    "dark": "/logo/village-dark.png"
   },
   "navbar": {
     "links": [
@@ -71,8 +84,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Village Labs",
-      "href": "https://www.villagelabs.com"
+      "label": "Schedule Session",
+      "href": "https://www.villagelabs.com/contact"
     }
   },
   "contextual": {

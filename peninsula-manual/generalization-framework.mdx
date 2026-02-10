@@ -1,0 +1,64 @@
+---
+title: "Generalization Framework"
+description: "How to scale Peninsula manuals from EBLG to future clients without sacrificing precision or governance."
+---
+
+## What Generalize Well Means
+
+For Peninsula documentation, generalization means:
+
+- The same core operating model can be reused across clients.
+- Client-specific policy and workflow differences are isolated in overlays.
+- Teams can onboard quickly without re-litigating architecture basics.
+- Governance artifacts remain auditable and comparable across implementations.
+
+## Three-Layer Model
+
+<CardGroup cols={3}>
+  <Card title="Layer 1: Core Standard" icon="book">
+    Stable platform principles, data pipeline mechanics, indexing model, security controls, and governance rhythm.
+  </Card>
+  <Card title="Layer 2: Client Overlay" icon="building">
+    Scope decisions, confidentiality rules, connector choices, workflow pack, thresholds, and open questions.
+  </Card>
+  <Card title="Layer 3: Operator Runbook" icon="clipboard-list">
+    Cadence, owners, update workflow, publishing rules, and incident/exception handling.
+  </Card>
+</CardGroup>
+
+## Adaptation Workflow for New Clients
+
+1. Copy the latest approved core standard.
+2. Create a new client overlay page set.
+3. Define policy boundaries and data source permissions.
+4. Set indexing/OCR thresholds and retrieval acceptance criteria.
+5. Build requirement traceability from stakeholder asks to controls.
+6. Publish with deployment runbook and ownership matrix.
+
+## Minimum Client Overlay Checklist
+
+- Goals and constraints
+- In-scope/out-of-scope/hold-zone policy
+- Knowledge taxonomy starter
+- Indexing and OCR profile
+- Workflow pack (phase 1 and phase 2)
+- Requirement traceability matrix
+- Open decisions register
+- Board/operator FAQ
+
+## Anti-Patterns to Avoid
+
+- Over-customizing core pages for one client.
+- Hiding policy decisions in informal notes.
+- Treating indexing as all-or-nothing.
+- Shipping workflows without explicit human review gates.
+- Skipping export and portability validation.
+
+## Canonical Artifact Set
+
+- `standard-manual` as the baseline source of truth.
+- `client-overlay` pages for each implementation.
+- `requirements-traceability` page for stakeholder confidence.
+- `deployment-and-ops` page for publishing continuity.
+
+This structure gives Village Labs a repeatable documentation operating system, not a one-off client deliverable.

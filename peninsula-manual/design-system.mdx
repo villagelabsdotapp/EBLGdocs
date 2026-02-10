@@ -1,0 +1,92 @@
+---
+title: "Design System & Lego Kit"
+description: "Reusable documentation units for cards, explainers, workflows, and diagrams across Peninsula client manuals."
+---
+
+import { LegoBlock } from '/snippets/manual-lego-legend.mdx';
+
+## Why a Docs Lego Kit Exists
+
+A strong documentation system should scale without becoming generic noise. For Peninsula, that means we reuse structural units while customizing policy and workflow content by client.
+
+Reusable units create three advantages:
+
+- Faster page authoring with consistent quality.
+- Easier governance review because structure is predictable.
+- Better cross-client portability with less rewrite effort.
+
+## Core Lego Units
+
+<div className="vl-grid">
+  <LegoBlock title="Context Card" body="Defines the decision or workflow context in plain language before technical detail." />
+  <LegoBlock title="Boundary Block" body="States what is in-scope, out-of-scope, and hold-zone for policy and data controls." />
+  <LegoBlock title="Decision Block" body="Captures options, recommendation, rationale, and owner for clear accountability." />
+  <LegoBlock title="Mechanics Block" body="Explains process steps and why each step exists in operational terms." />
+  <LegoBlock title="Risk Block" body="Lists failure modes, signals, and mitigation plan for resilient deployment." />
+  <LegoBlock title="Evidence Block" body="Links claims to citations, logs, exports, and measurable acceptance checks." />
+</div>
+
+## Recommended Page Composition
+
+1. Open with intent and audience.
+2. Define scope boundaries and assumptions.
+3. Explain mechanics with a visual map.
+4. Add controls, risks, and decision checkpoints.
+5. End with operator actions and ownership.
+
+## Reusable Card Pattern
+
+<CardGroup cols={2}>
+  <Card title="What" icon="circle-info">
+    One concise paragraph defining what this page or section solves.
+  </Card>
+  <Card title="Why" icon="lightbulb">
+    The reason this matters to quality, governance, delivery speed, or risk reduction.
+  </Card>
+  <Card title="How" icon="gear">
+    Process mechanics with numbered steps and practical thresholds.
+  </Card>
+  <Card title="Evidence" icon="shield-check">
+    Data points, metrics, and checkpoints used to validate correctness.
+  </Card>
+</CardGroup>
+
+## Reusable Explainer Pattern
+
+<AccordionGroup>
+  <Accordion title="Explain in one sentence">
+    Start with a plain-language summary before introducing architecture terms.
+  </Accordion>
+  <Accordion title="Explain from first principles">
+    Describe inputs, transformations, outputs, and constraints.
+  </Accordion>
+  <Accordion title="Explain operationally">
+    Show where this appears in daily workflow and who is responsible.
+  </Accordion>
+  <Accordion title="Explain governance impact">
+    Clarify the audit and risk implications of getting this wrong.
+  </Accordion>
+</AccordionGroup>
+
+## Reusable Diagram Template
+
+<Mermaid>
+flowchart TD
+    A["Business Goal"] --> B["Policy & Scope Rules"]
+    B --> C["Data Intake + Triage"]
+    C --> D["Selective Processing"]
+    D --> E["Index + Retrieval"]
+    E --> F["Agent/LLM Draft"]
+    F --> G["Human Review Gate"]
+    G --> H["Approved Output"]
+    G --> I["Feedback + Re-index"]
+    I --> D
+</Mermaid>
+
+## Authoring Rules for Generalization
+
+- Keep reusable wording in standard pages and snippets.
+- Put client specifics in overlay pages only.
+- Keep decision thresholds explicit and editable.
+- Separate product truth from implementation assumptions.
+- Treat diagrams as control maps, not decoration.
