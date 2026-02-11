@@ -140,6 +140,27 @@ Each workflow requires:
 
 ---
 
+## 22.1 NetDocs + Peninsula Operating Pattern
+
+Recommended architecture for EBLG:
+
+| System | Primary role |
+| --- | --- |
+| NetDocs / DMS | canonical document management and matter attachment |
+| Enterprise system (CRM/time/billing) | operational and financial system-of-record |
+| Peninsula + Kelso | firm-wide knowledge graph, retrieval, analysis, and work-product acceleration |
+
+Operating pattern:
+
+1. NetDocs and enterprise systems feed Peninsula through approved connectors.
+2. Peninsula structures this data and preserves provenance to source systems.
+3. Team uses natural language in Peninsula for deep retrieval and synthesis.
+4. Final document control can remain in NetDocs according to firm policy.
+
+This preserves existing staff workflows while adding AI-native knowledge leverage.
+
+---
+
 ## 23. Kevin Concern Traceability Matrix
 
 This matrix maps Kevin's stated concerns to manual controls.

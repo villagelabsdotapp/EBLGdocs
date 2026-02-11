@@ -23,7 +23,10 @@
             "group": "Orientation",
             "pages": [
               "index",
-              "peninsula-manual/index"
+              "peninsula-manual/index",
+              "peninsula-manual/what-is-peninsula",
+              "peninsula-manual/kelso-agent-model",
+              "peninsula-manual/implementation-roadmap-eblg"
             ]
           },
           {

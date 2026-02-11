@@ -1,0 +1,67 @@
+---
+title: "Kelso Agent Model"
+description: "How Kelso works, how agents differ from prompts, and how multi-model orchestration is governed."
+---
+
+## Quick Definition
+
+Kelso is Peninsula's execution agent layer. It is designed to perform work, not just answer one-off questions.
+
+## Prompt vs. Agent
+
+| Concept | Meaning | Operational consequence |
+| --- | --- | --- |
+| Prompt | instruction for how to respond in a given moment | useful for ad hoc tasks, ephemeral behavior |
+| Agent | persistent worker with tools, memory, and task execution logic | supports repeatable workflows and higher consistency |
+
+## What Kelso Can Do (Base)
+
+- Query EBLG knowledge corpus in natural language.
+- Return source-grounded outputs with citations.
+- Draft documents and structured analysis artifacts.
+- Propose follow-up actions and request clarification when confidence is low.
+
+## What Kelso Can Do (With Workflow Programming)
+
+- Execute multi-step workflows across systems.
+- Trigger specialized sub-agents for parallel task execution.
+- Apply firm templates and style rules to output.
+- Maintain standardized process quality across teams.
+
+## Multi-Model Strategy
+
+Peninsula supports multiple leading model providers. Model choice can be:
+
+- user-selected for a task,
+- system-routed based on workload type,
+- constrained by client policy and confidentiality requirements.
+
+Policy principle: model routing can vary, but retrieval evidence and governance controls remain consistent.
+
+## Cross-Platform Execution Pattern
+
+Kelso can read from connected systems by default. Write-back behavior depends on destination system APIs and approved permissions.
+
+| Operation type | Expected capability |
+| --- | --- |
+| Read from source systems | standard |
+| Analyze and synthesize | standard |
+| Create deliverables | standard |
+| Update external system records | conditional on API and policy |
+
+## Suggested Default Behavior Pack
+
+For EBLG v1:
+
+1. Always provide citations for substantive legal outputs.
+2. Provide confidence markers and request clarifications on ambiguous facts.
+3. Offer suggested next steps after each major output.
+4. Route low-confidence or novel-issue outputs to senior review.
+
+## Why This Matters
+
+Kelso should be treated as a programmable digital workforce:
+
+- broad capability for ad hoc tasks,
+- deep reliability for high-frequency workflows once configured,
+- continuous improvement through structured feedback and policy updates.
